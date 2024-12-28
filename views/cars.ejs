@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Cars</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+  <!-- Include Navbar -->
+  <%- include('partials/navbar') %>
+
+  <main class="container mt-5 text-center">
+    <h1>Random Cars</h1>
+    <p><strong>Car 1:</strong> <%= car1 %></p>
+    <p><strong>Car 2:</strong> <%= car2 %></p>
+    <div class="container text-center mt-4">
+        <div>
+          <button class="generate-button" onclick="location.reload();">Generate New Cars</button>
+        </div>
+      </div>
+        
+  </main>
+
+  <!-- Packages Used -->
+  <div class="container mt-5">
+    <div class="packages-block">
+      <h2 class="text-center">Packages Used</h2>
+      <ul>
+        <li>
+          <strong>Car Name Generator:</strong> 
+          <a href="https://www.npmjs.com/package/car-names" target="_blank">car-names</a>
+        </li>
+        <li>
+          <strong>Unique Name Generator:</strong> 
+          <a href="https://www.npmjs.com/package/unique-names-generator" target="_blank">unique-names-generator</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <%- include('partials/footer') %>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
